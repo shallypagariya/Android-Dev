@@ -2,16 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="#FFF8E1">
+    android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Good Morning App"
-        android:textSize="24sp"
+        android:text="Feet to Centimeter Converter"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#000"/>
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextFeet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value in feet"
+        android:inputType="numberDecimal"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:padding="10dp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
 
 </LinearLayout>
